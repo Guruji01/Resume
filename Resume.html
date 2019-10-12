@@ -94,21 +94,27 @@
   	transition: width 0.5s, height 0.5s, margin-left 0.5s;
   	height: 6vh; 
   	width: 60%; 
+  	margin-top: 66%;
   	border: solid;
   	border-color: black; 
   	margin-left: 20%;
+  	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   }
   #d1, #d2, #d3, #d4
   {
   	height: 50vh; 
   	width: 20%;
+  	border-radius: 15%;
+    	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 25px 5px rgba(0,0,0,0); 
+     box-shadow: 0px 25px 50px -7px #111111, 5px 5px 15px 5px rgba(0,0,0,0);
   }
 
   #i1, #i2, #i3, #i4
   {
   	height: 130px;
   	width: 180px;
-  	margin-top: 1.5%;
+  	margin-top: 4%;
   	margin-left: 9%;
   }
   
@@ -187,8 +193,8 @@
   function think()
   {
     document.getElementById("thinking").style.color = " #c41e3a";
-    document.getElementById("thinking").style.fontSize = "3vh";
-    document.getElementById("x1").style.marginTop = "22.8%";
+    document.getElementById("thinking").style.fontSize = "2.5vh";
+    document.getElementById("x1").style.marginTop = "32%";
   }
   function thinkback()
   {
@@ -196,6 +202,19 @@
     document.getElementById("thinking").style.fontSize = "2vh";
     document.getElementById("x1").style.marginTop = "32%";
   }
+
+
+        function effect6()
+  {
+     document.getElementById("x6").style.color = "black";
+     document.getElementById("x6").style.backgroundColor = "white";
+  }
+  function effectBack6()
+  {
+     document.getElementById("x6").style.color = "#545454";
+     document.getElementById("x6").style.backgroundColor = "#70DB93";
+  }
+
 
 
       function btn1()
@@ -256,6 +275,39 @@
           x.style.width="60%";
           x.style.marginLeft = "20%";
 		} 
+
+		function call1()
+		{
+         document.getElementById("d1").style.boxShadow = "none";
+		}
+		function callback1()
+		{
+          document.getElementById("d1").style.boxShadow= "0px 25px 13px -7px #111111, 5px 5px 15px 5px rgba(0,0,0,0)";
+		}
+		function call2()
+		{
+         document.getElementById("d2").style.boxShadow = "none";
+		}
+		function callback2()
+		{
+          document.getElementById("d2").style.boxShadow= "0px 25px 13px -7px #111111, 5px 5px 15px 5px rgba(0,0,0,0)";
+		}
+		function call3()
+		{
+         document.getElementById("d3").style.boxShadow = "none";
+		}
+		function callback3()
+		{
+          document.getElementById("d3").style.boxShadow= "0px 25px 13px -7px #111111, 5px 5px 15px 5px rgba(0,0,0,0)";
+		}
+		function call4()
+		{
+         document.getElementById("d4").style.boxShadow = "none";
+		}
+		function callback4()
+		{
+          document.getElementById("d4").style.boxShadow= "0px 25px 13px -7px #111111, 5px 5px 15px 5px rgba(0,0,0,0)";
+		}
 
 </script>
 <body bgcolor="#a40000" onload="remove()">
@@ -318,6 +370,13 @@
        onclick="fun5()">
             <b>Languages</b>
        </p>
+
+        <p style="font-size: 3vh ; color: #545454;
+       font-family: Calibri; margin-top: 5%; margin-left: 16%" onmouseover="effect6()" onmouseout="effectBack6()" id="x6" 
+       onclick="fun6()">
+            <b>Contact Details</b>
+       </p>
+
 
 
       </div> <br/>
@@ -405,6 +464,17 @@
        </ul>
       </div>
 
+        <div style="background-color: #F2F2F2;
+       height: 20vh; width: 60%; margin-left: 4%;
+       margin-top: -13.7%" id="div6">
+       <ul>
+            <li><a href="mailto:naveenkaushal441@gmail.com" style="text-decoration: none">naveenkaushal441@gmail.com</a></li><li> 901792441, 992887441 </li>   
+          <li> Chitkara University, HP </li> 
+       </p>
+       </ul>
+      </div>
+
+
 
        
       </div> <br/>
@@ -412,13 +482,13 @@
       
 
       <div style="background-color: white;
-       height: 62.8vh; width: 83.6%; margin-left: 17%;
+       height: 63vh; width: 83.6%; margin-left: 17%;
        margin-top: -2%">
 
        <br/>
 
-         <div style="background-color: green; margin-left: 2%;
-       margin-top: -0.5%" id="d1">
+         <div style="background-color: green; margin-left: 2%; transition: box-shadow 1s;
+       margin-top: -0.5%" id="d1" onmousemove="call1()" onmouseout="callback1()">
 
         <img src="truck.jpg" id="i1">
        <a href="" ><input id="b1" type="button" value="Submit" onmouseover="btn1()" onmouseout="btn1back()" onclick="open()"></a>
@@ -426,23 +496,23 @@
 
       </div>
 
-      <div style="background-color: orange; margin-left: 26%;
-       margin-top: -30.8%" id="d2">
+      <div style="background-color: orange; margin-left: 26%; transition: box-shadow 1s;
+       margin-top: -30.8%" id="d2"  onmousemove="call2()" onmouseout="callback2()">
 
          <img src="truck.jpg" id="i2">
         <a href="" ><input  id="b2" type="button" value="Submit" onmouseover="btn2()" onmouseout="btn2back()" onclick="open()"></a>
         
       </div>
 
-      <div style="background-color: red; margin-left: 50%;
-       margin-top: -30.8%" id="d3">
+      <div style="background-color: red; margin-left: 50%; transition: box-shadow 1s;
+       margin-top: -30.8%" id="d3" onmousemove="call3()" onmouseout="callback3()">
 
          <img src="truck.jpg" id="i3">
         <a href="" ><input id="b3" type="button" value="Submit" onmouseover="btn3()" onmouseout="btn3back()" onclick="open()"></a>
                </div>
 
-      <div style="background-color: blue; margin-left: 75%;
-       margin-top: -30.8%" id="d4">
+      <div style="background-color: blue; margin-left: 75%; transition: box-shadow 1s;
+       margin-top: -30.8%" id="d4" onmousemove="call4()" onmouseout="callback4()">
 
         <img src="truck.jpg" id="i4">
         <a href="" ><input id="b4" type="button" value="Submit" onmouseover="btn4()" onmouseout="btn4back()" onclick="open()"></a>
@@ -467,6 +537,7 @@
 	document.getElementById("div3").style.visibility = "hidden";
 	document.getElementById("div4").style.visibility = "hidden";
 	document.getElementById("div5").style.visibility = "hidden";
+	document.getElementById("div6").style.visibility = "hidden";
     }
 
 	function fun1()
@@ -494,6 +565,12 @@
 		remove();
 	document.getElementById("div5").style.visibility = "visible";
 	}
+
+   function fun6()
+   {
+    remove();
+   document.getElementById("div6").style.visibility = "visible";
+   }
 </script>
 
 
