@@ -4,6 +4,7 @@
 
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+
 	<title>
 		 Naveen Kaushal Resume
 	</title>
@@ -84,6 +85,31 @@
     font-size : "2.5vh" ;
     font-family: "Calibri";  
     color: "F2F2F2";
+  }
+
+  #b1, #b2, #b3, #b4
+  {
+  	margin-top:130%;
+  	background-color: #FD1C03;
+  	transition: width 0.5s, height 0.5s, margin-left 0.5s;
+  	height: 6vh; 
+  	width: 60%; 
+  	border: solid;
+  	border-color: black; 
+  	margin-left: 20%;
+  }
+  #d1, #d2, #d3, #d4
+  {
+  	height: 50vh; 
+  	width: 20%;
+  }
+
+  #i1, #i2, #i3, #i4
+  {
+  	height: 130px;
+  	width: 180px;
+  	margin-top: 1.5%;
+  	margin-left: 9%;
   }
   
   </style>
@@ -171,6 +197,66 @@
     document.getElementById("x1").style.marginTop = "32%";
   }
 
+
+      function btn1()
+		{
+          var x = document.getElementById("b1");
+          x.style.height="7vh";
+          x.style.width="80%";
+          x.style.marginLeft = "10%";
+	   } 
+
+		function btn1back()
+		{
+          var x = document.getElementById("b1");
+          x.style.height="6vh";
+          x.style.width="60%";
+          x.style.marginLeft = "20%";
+		} 
+
+		function btn2()
+		{
+          var x = document.getElementById("b2");
+          x.style.height="7vh";
+          x.style.width="80%";
+          x.style.marginLeft = "10%";
+		} 
+		function btn2back()
+		{
+          var x = document.getElementById("b2");
+          x.style.height="6vh";
+          x.style.width="60%";
+          x.style.marginLeft = "20%";
+		} 
+		function btn3()
+		{
+          var x = document.getElementById("b3");
+          x.style.height="7vh";
+          x.style.width="80%";
+          x.style.marginLeft = "10%";
+		} 
+		function btn3back()
+		{
+          var x = document.getElementById("b3");
+          x.style.height="6vh";
+          x.style.width="60%";
+          x.style.marginLeft = "20%";
+		} 
+		function btn4()
+		{
+          var x = document.getElementById("b4");
+          x.style.height="7vh";
+          x.style.width="80%";
+          x.style.marginLeft = "10%";
+		} 
+		function btn4back()
+		{
+          var x = document.getElementById("b4");
+          x.style.height="6vh";
+          x.style.width="60%";
+          x.style.marginLeft = "20%";
+		} 
+
 </script>
 <body bgcolor="#a40000" onload="remove()">
 
@@ -191,7 +277,7 @@
 	    	  </a>
 
 	    <p style="font-size: 2vh ;
-       font-family: monospace; margin-top: 3%; margin-left: 12%; color: #696969" id="thinking" onmouseover="think()" onmouseout="thinkback()" >
+       font-family: monospace; margin-top: 3%; margin-left: 12%; color: #696969; transition: font-size 0.3s" id="thinking" onmouseover="think()" onmouseout="thinkback()" >
             <b>I am  failure , but not  "looser"</b>
        </p>
        <br/>
@@ -329,7 +415,37 @@
        height: 62.8vh; width: 83.6%; margin-left: 17%;
        margin-top: -2%">
 
+       <br/>
 
+         <div style="background-color: green; margin-left: 2%;
+       margin-top: -0.5%" id="d1">
+
+        <img src="truck.jpg" id="i1">
+       <a href="" ><input id="b1" type="button" value="Submit" onmouseover="btn1()" onmouseout="btn1back()" onclick="open()"></a>
+      
+
+      </div>
+
+      <div style="background-color: orange; margin-left: 26%;
+       margin-top: -30.8%" id="d2">
+
+         <img src="truck.jpg" id="i2">
+        <a href="" ><input  id="b2" type="button" value="Submit" onmouseover="btn2()" onmouseout="btn2back()" onclick="open()"></a>
+        
+      </div>
+
+      <div style="background-color: red; margin-left: 50%;
+       margin-top: -30.8%" id="d3">
+
+         <img src="truck.jpg" id="i3">
+        <a href="" ><input id="b3" type="button" value="Submit" onmouseover="btn3()" onmouseout="btn3back()" onclick="open()"></a>
+               </div>
+
+      <div style="background-color: blue; margin-left: 75%;
+       margin-top: -30.8%" id="d4">
+
+        <img src="truck.jpg" id="i4">
+        <a href="" ><input id="b4" type="button" value="Submit" onmouseover="btn4()" onmouseout="btn4back()" onclick="open()"></a>
       </div>
        
 
